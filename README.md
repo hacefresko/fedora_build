@@ -12,7 +12,7 @@ sudo swapoff -a
 sudo dnf install -y https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/wezterm-20240203_110809_5046fc22-1.fedora39.x86_64.rpm
 ```
 
-Conf file is located at `/home/<user>/.wezterm.lua`.
+Conf file is located at `~/.wezterm.lua`.
 
 ## Generic DNF packages
 
@@ -112,7 +112,7 @@ https://portswigger.net/burp/releases/professional-community-2024-7-6?requestede
 
 ## Ghidra
 
-Downloaded release from github at https://github.com/NationalSecurityAgency/ghidra/releases into `/usr/lib/ghidra`
+Downloaded release from github at https://github.com/NationalSecurityAgency/ghidra/releases into `/opt/ghidra`
 
 Installed java development SDK:
 
@@ -120,7 +120,11 @@ Installed java development SDK:
 sudo dnf install java-latest-openjdk-devel
 ```
 
-Linked start script to `~/bin`.
+Linked start script to `~/bin`:
+
+```
+sudo ln -s /opt/ghidra/ghidraRun ~/bin/ghidra
+```
 
 Created a desktop shortcut at `/usr/share/applications/ghidra.desktop`:
 
@@ -130,7 +134,7 @@ Version=10.0
 Type=Application
 Terminal=false
 Icon=/opt/ghidra/support/ghidra.ico
-Exec=sh /home/<user>/bin/ghidra
+Exec=sh ~/bin/ghidra
 Name=Ghidra
 ```
 
