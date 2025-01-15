@@ -12,7 +12,7 @@ sudo swapoff -a
 sudo dnf install -y https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/wezterm-20240203_110809_5046fc22-1.fedora39.x86_64.rpm
 ```
 
-Conf file is located at `/home/hacefresko/.wezterm.lua`.
+Conf file is located at `/home/<user>/.wezterm.lua`.
 
 ## Generic DNF packages
 
@@ -54,7 +54,7 @@ sudo dnf install wireshark
 Add our user to the `wireshark` group so that we can use it without sudo privileges:
 
 ```
-sudo usermod -a -G wireshark hacefresko
+sudo usermod -a -G wireshark <user>
 ```
 
 ## GNOME
@@ -130,7 +130,7 @@ Version=10.0
 Type=Application
 Terminal=false
 Icon=/opt/ghidra/support/ghidra.ico
-Exec=sh /home/hacefresko/bin/ghidra
+Exec=sh /home/<user>/bin/ghidra
 Name=Ghidra
 ```
 
