@@ -112,7 +112,7 @@ https://portswigger.net/burp/releases/professional-community-2024-7-6?requestede
 
 ## Ghidra
 
-Downloaded release from github at https://github.com/NationalSecurityAgency/ghidra/releases into `/usr/lib/ghidra
+Downloaded release from github at https://github.com/NationalSecurityAgency/ghidra/releases into `/usr/lib/ghidra`
 
 Installed java development SDK:
 
