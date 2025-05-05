@@ -2,6 +2,9 @@ local wezterm = require "wezterm"
 local config = wezterm.config_builder()
 
 
+-- Fonts
+config.font = wezterm.font 'Noto Sans Mono'
+
 -- Colors
 local black         = "#000000"
 local blue          = "#0066ff"
