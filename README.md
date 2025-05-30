@@ -174,7 +174,7 @@ go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install github.com/haccer/subjack@latest
 go install github.com/lc/gau/v2/cmd/gau@latest
-go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 go install github.com/dwisiswant0/crlfuzz/cmd/crlfuzz@latest
 ```
